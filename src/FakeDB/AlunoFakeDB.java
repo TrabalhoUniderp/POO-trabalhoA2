@@ -1,5 +1,6 @@
 package FakeDB;
 
+import dominio.Aluno;
 import java.time.LocalDate;
 
 public class AlunoFakeDB extends BaseFakeDB<Aluno> {
