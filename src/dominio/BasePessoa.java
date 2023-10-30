@@ -1,18 +1,18 @@
 package dominio;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public abstract class BasePessoa extends BaseDadosComuns {
 
-    protected java.util.Date dataNascimento;
+    protected LocalDate dataNascimento;
     protected String nomeUsuario;
     protected String senha;
 
-    public java.util.Date getDataNascimento() {
+    public LocalDate getDataNascimento() {
         return dataNascimento;
     }
 
-    public void setDataNascimento(java.util.Date dataNascimento) {
+    public void setDataNascimento(LocalDate dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
 
@@ -32,7 +32,7 @@ public abstract class BasePessoa extends BaseDadosComuns {
         this.senha = senha;
     }
 
-    public BasePessoa(int codigo, String nome, Date dataNascimento, String nomeUsuario, String senha) {
+    public BasePessoa(int codigo, String nome, LocalDate dataNascimento, String nomeUsuario, String senha) {
         super(codigo, nome);
         this.dataNascimento = dataNascimento;
         this.nomeUsuario = nomeUsuario;

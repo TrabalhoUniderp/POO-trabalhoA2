@@ -1,8 +1,10 @@
 package FakeDB;
 
+import java.util.ArrayList;
+
 import dominio.RendEscolar;
 
-public class RendEscolarFakeDB extends BaseFakeDB<Rend> {
+public class RendEscolarFakeDB extends BaseFakeDB<RendEscolar> {
 
     @Override
     protected void CarregarDados() {

@@ -1,10 +1,14 @@
+package FakeDB;
+
+import java.util.ArrayList;
+
 public abstract class BaseFakeDB<Tlista> {
 
-    private ArrayList<Tlista> tabela;
+    protected ArrayList<Tlista> tabela;
 
     public ArrayList<Tlista> getTabela() {
-        if (this.tabela == tabela){
-            this.tabela = new ArrayList
+        if (this.tabela == null) {
+            this.tabela = new ArrayList<Tlista>();
         }
         return this.tabela;
     }

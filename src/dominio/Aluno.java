@@ -1,6 +1,6 @@
 package dominio;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public class Aluno extends BasePessoa {
 
@@ -14,7 +14,7 @@ public class Aluno extends BasePessoa {
         this.periodo = periodo;
     }
 
-    public Aluno(int codigo, String nome, Date dataNascimento, String nomeUsuario, String senha, int periodo) {
+    public Aluno(int codigo, String nome, LocalDate dataNascimento, String nomeUsuario, String senha, int periodo) {
         super(codigo, nome, dataNascimento, nomeUsuario, senha);
         this.periodo = periodo;
     }
