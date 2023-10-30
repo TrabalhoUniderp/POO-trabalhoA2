@@ -14,8 +14,8 @@ public class Aluno extends BasePessoa {
         this.periodo = periodo;
     }
 
-    public Aluno(String nome, Date dataNascimento, String nomeUsuario, String senha, int periodo) {
-        super(nome, dataNascimento, nomeUsuario, senha);
+    public Aluno(int codigo, String nome, Date dataNascimento, String nomeUsuario, String senha, int periodo) {
+        super(codigo, nome, dataNascimento, nomeUsuario, senha);
         this.periodo = periodo;
     }
 

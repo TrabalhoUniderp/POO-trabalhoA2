@@ -14,11 +14,9 @@ public class Professor extends BasePessoa {
         this.cargo = cargo;
     }
 
-    public Professor(String nome, Date dataNascimento, String nomeUsuario, String senha, String cargo) {
-        super(nome, dataNascimento, nomeUsuario, senha);
+    public Professor(int codigo, String nome, Date dataNascimento, String nomeUsuario, String senha, String cargo) {
+        super(codigo, nome, dataNascimento, nomeUsuario, senha);
         this.cargo = cargo;
     }
 
-    
-    
 }
