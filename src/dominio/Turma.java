@@ -1,8 +1,5 @@
 package dominio;
 
-import dominio.Disciplina;
-import dominio.Professor;
-
 public class Turma extends BaseIdentificador {
 
     private Disciplina disciplina;

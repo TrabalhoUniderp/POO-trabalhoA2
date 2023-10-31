@@ -1,7 +1,5 @@
 package FakeDB;
 
-import java.util.ArrayList;
-
 import dominio.Disciplina;
 
 public class DisciplinaFakeDB extends BaseFakeDB<Disciplina> {

@@ -1,6 +1,5 @@
 package FakeDB;
 
-import java.util.ArrayList;
 import dominio.Turma;
 import dominio.Professor;
 import dominio.Disciplina;

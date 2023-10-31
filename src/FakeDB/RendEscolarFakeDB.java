@@ -1,7 +1,5 @@
 package FakeDB;
 
-import java.util.ArrayList;
-
 import dominio.RendEscolar;
 
 public class RendEscolarFakeDB extends BaseFakeDB<RendEscolar> {
