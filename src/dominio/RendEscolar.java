@@ -45,7 +45,7 @@ public class RendEscolar extends BaseIdentificador {
         this.notaProva2 = notaProva2;
     }
 
-     public NotaTrabalho getTrabalho1() {
+    public NotaTrabalho getTrabalho1() {
         return trabalho1;
     }
 
@@ -77,7 +77,6 @@ public class RendEscolar extends BaseIdentificador {
         this.trabalho4 = trabalho4;
     }
 
-
     public double getMediaTrabalhos() {
         return mediaTrabalhos;
     }
@@ -95,7 +94,8 @@ public class RendEscolar extends BaseIdentificador {
     }
 
     public RendEscolar(int codigo, Aluno aluno, Turma turma, double notaProva1, double notaProva2,
-            NotaTrabalho trabalhos, double mediaTrabalhos, double mediageralAluno) {
+            NotaTrabalho trabalho1, NotaTrabalho trabalho2, NotaTrabalho trabalho3, NotaTrabalho trabalho4,
+            double mediaTrabalhos, double mediageralAluno) {
         super(codigo);
         this.aluno = aluno;
         this.turma = turma;
@@ -116,7 +116,10 @@ public class RendEscolar extends BaseIdentificador {
         System.out.println(this.turma);
         System.out.println(this.notaProva1);
         System.out.println(this.notaProva2);
-        System.out.println(this.trabalhos);
+        System.out.println(this.trabalho1);
+        System.out.println(this.trabalho2);
+        System.out.println(this.trabalho3);
+        System.out.println(this.trabalho4);
         System.out.println(this.mediaTrabalhos);
         System.out.println(this.mediageralAluno);
 
