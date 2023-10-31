@@ -3,10 +3,10 @@
 
 1 - IDENTIFICAÇÃO
 
-Integrantes: Mauricio Cabanhas Mota
-             Janderson Gonçalves dos Santos
-             Nicolas Delmondes Gimenez
-             Bruno do Nascimento Miranda do Carmo
+Integrantes: Mauricio Cabanhas Mota.
+             Janderson Gonçalves dos Santos.
+             Nicolas Delmondes Gimenez.
+             Bruno do Nascimento Miranda do Carmo.
 
 Docente: Luiz Augusto Jacinto Rodrigues
 
