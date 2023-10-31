@@ -1,10 +1,11 @@
 package Menu;
 import java.util.Scanner;
-
+import FakeDB.RendEscolarFakeDB;
 public class AlunoMenu {
     private Scanner scan;
     TurmasMenu T1 = new TurmasMenu();
     DisciplinasMenu D = new DisciplinasMenu();
+    RendEscolarFakeDB R = new RendEscolarFakeDB();
     public AlunoMenu(){
         this.scan = new Scanner(System.in);
         }
@@ -41,7 +42,7 @@ public class AlunoMenu {
                     D.Aluno1();
                     break;
                     case 3:
-                    //Aqui a gente coloca todas as informações da classe RendEscolar
+                    System.out.println("\nPLACEHOLDER\n");
                     break;
                     case 0:
                     return;
@@ -72,7 +73,7 @@ public class AlunoMenu {
                     D.Aluno2();
                     break;
                     case 3:
-                    //Aqui a gente coloca todas as informações da classe RendEscolar
+                    System.out.println("\nPLACEHOLDER\n");
                     break;
                     case 0:
                     return;
@@ -101,7 +102,7 @@ public class AlunoMenu {
                     D.Aluno3();
                     break;
                     case 3:
-                    //Aqui a gente coloca todas as informações da classe RendEscolar
+                    System.out.println("\nPLACEHOLDER\n");
                     break;
                     case 0:
                     return;
@@ -130,7 +131,7 @@ public class AlunoMenu {
                     D.Aluno4();
                     break;
                     case 3:
-                    //Aqui a gente coloca todas as informações da classe RendEscolar
+                    System.out.println("\nPLACEHOLDER\n");
                     break;
                     case 0:
                     return;
@@ -173,7 +174,7 @@ public class AlunoMenu {
                     D.Aluno5();
                     break;
                     case 3:
-                    //Aqui a gente coloca todas as informações da classe RendEscolar
+                    System.out.println("\nPLACEHOLDER\n");
                     break;
                     case 0:
                     return;
@@ -203,7 +204,7 @@ public class AlunoMenu {
                     D.Aluno6();
                     break;
                     case 3:
-                    //Aqui a gente coloca todas as informações da classe RendEscolar
+                    System.out.println("\nPLACEHOLDER\n");
                     break;
                     case 0:
                     return;
@@ -232,7 +233,7 @@ public class AlunoMenu {
                     D.Aluno7();
                     break;
                     case 3:
-                    //Aqui a gente coloca todas as informações da classe RendEscolar
+                    System.out.println("\nPLACEHOLDER\n");
                     break;
                     case 0:
                     return;
@@ -261,7 +262,7 @@ public class AlunoMenu {
                     D.Aluno8();
                     break;
                     case 3:
-                    //Aqui a gente coloca todas as informações da classe RendEscolar
+                    System.out.println("\nPLACEHOLDER\n");
                     break;
                     case 0:
                     return;
@@ -304,7 +305,7 @@ public class AlunoMenu {
                     D.Aluno9();
                     break;
                     case 3:
-                    //Aqui a gente coloca todas as informações da classe RendEscolar
+                    System.out.println("\nPLACEHOLDER\n");
                     break;
                     case 0:
                     return;
@@ -335,7 +336,7 @@ public class AlunoMenu {
                     D.Aluno10();
                     break;
                     case 3:
-                    //Aqui a gente coloca todas as informações da classe RendEscolar
+                    System.out.println("\nPLACEHOLDER\n");
                     break;
                     case 0:
                     return;
@@ -364,7 +365,7 @@ public class AlunoMenu {
                     D.Aluno11();
                     break;
                     case 3:
-                    //Aqui a gente coloca todas as informações da classe RendEscolar
+                    System.out.println("\nPLACEHOLDER\n");
                     break;
                     case 0:
                     return;
@@ -394,7 +395,7 @@ public class AlunoMenu {
                     D.Aluno12();
                     break;
                     case 3:
-                    //Aqui a gente coloca todas as informações da classe RendEscolar
+                    System.out.println("\nPLACEHOLDER\n");
                     break;
                     case 0:
                     return;
