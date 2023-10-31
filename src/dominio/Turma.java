@@ -37,4 +37,12 @@ public class Turma extends BaseIdentificador {
         this.capacidadeTurma = capacidadeTurma;
     }
 
+    @Override
+    public void Imprimir() {
+        System.out.println(this.codigo);
+        System.out.println(this.disciplina);
+        System.out.println(this.professor);
+        System.out.println(this.capacidadeTurma);
+    }
+
 }

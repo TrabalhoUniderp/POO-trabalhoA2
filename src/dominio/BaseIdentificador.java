@@ -1,6 +1,6 @@
 package dominio;
 
-public abstract class BaseIdentificador {
+public abstract class BaseIdentificador implements IImpressao {
 
     protected int codigo;
 

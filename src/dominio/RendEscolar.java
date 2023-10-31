@@ -78,4 +78,17 @@ public class RendEscolar extends BaseIdentificador {
         this.mediageralAluno = mediageralAluno;
     }
 
+    @Override
+    public void Imprimir() {
+        System.out.println(this.codigo);
+        System.out.println(this.aluno);
+        System.out.println(this.turma);
+        System.out.println(this.notaProva1);
+        System.out.println(this.notaProva2);
+        System.out.println(this.trabalhos);
+        System.out.println(this.mediaTrabalhos);
+        System.out.println(this.mediageralAluno);
+
+    }
+
 }

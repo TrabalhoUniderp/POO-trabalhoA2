@@ -17,4 +17,11 @@ public class Disciplina extends BaseDadosComuns {
         this.ementa = ementa;
     }
 
+    @Override
+    public void Imprimir() {
+        System.out.println(this.codigo);
+        System.out.println(this.nome);
+        System.out.println(this.ementa);
+    }
+
 }

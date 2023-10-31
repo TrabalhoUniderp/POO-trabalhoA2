@@ -37,4 +37,12 @@ public class NotaTrabalho extends BaseIdentificador {
         this.nota = nota;
     }
 
+    @Override
+    public void Imprimir() {
+        System.out.println(this.codigo);
+        System.out.println(this.aluno);
+        System.out.println(this.trabalho);
+        System.out.println(this.nota);
+    }
+
 }

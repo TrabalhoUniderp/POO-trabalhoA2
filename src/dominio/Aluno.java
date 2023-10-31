@@ -19,4 +19,14 @@ public class Aluno extends BasePessoa {
         this.periodo = periodo;
     }
 
+    @Override
+    public void Imprimir() {
+        System.out.println(this.codigo);
+        System.out.println(this.nome);
+        System.out.println(this.dataNascimento);
+        System.out.println(this.nomeUsuario);
+        System.out.println(this.senha);
+        System.out.println(this.periodo);
+    }
+
 }
