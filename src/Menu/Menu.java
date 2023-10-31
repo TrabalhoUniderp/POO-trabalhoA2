@@ -1,170 +1,143 @@
 package Menu;
 import java.util.Scanner;
-public class Menu {
-private Scanner scan;
-TurmasMenu T = new TurmasMenu();
-AlunoMenu A1 = new AlunoMenu();
-public Menu(){
-this.scan = new Scanner(System.in);
-}
-public void Executar(){
-this.ExibirMenu();
-}
-private void ExibirMenu(){
-    int continuar = 99;
-    do
-    {
-        System.out.println("\n\t===================");
-        System.out.println("\tSelecione uma opcao");
-        System.out.println("\t===================\n\n");    
-        System.out.println("1. Professor \n");
-        System.out.println("2. Aluno\n");
-    System.out.println("0. Sair\n");
-    continuar = this.scan.nextInt();
-    
-    switch(continuar)
-    {
-    case 1:
-    this.ProfessorMenu();
-    break;
-    case 2:
-    this.AlunoMenu();
-    break;
-    case 0:
-    this.Sair();
-    break;
-    default:
-    System.out.println("Digite uma opção válida\n");
-    }
-    } while(continuar != 0);
-}
+public class TurmasMenu {
+    private Scanner scan;
+    DisciplinasMenu A = new DisciplinasMenu();
 
-private void ProfessorMenu()
-{
-int continuar = 99;
-do{
-    System.out.println("\n\t===================");
-    System.out.println("\tSelecione um professor");
-    System.out.println("\t===================\n\n");   
-    System.out.println("1. Professor Alan\n");
-    System.out.println("2. Professor Luiz\n");
-    System.out.println("0. Voltar\n");
-    continuar = this.scan.nextInt();
-    switch(continuar)
-            {
-            case 1:
-            this.TurmaMenu();
-            break;
-            case 2:
-            this.TurmaMenu();
-            break;
-            case 0:
-            return;
-        default:
-            System.out.println("Digite uma opção válida\n");
-            }
-            } while(continuar != 0);
-}
-private void TurmaMenu()
-{
-int continuar = 99;
-do{
-    System.out.println("\n\t===================");
-    System.out.println("\tSelecione uma turma");
-    System.out.println("\t===================\n\n");   
-    System.out.println("1. Turma 1\n");
-    System.out.println("2. Turma 2\n");
-    System.out.println("3. Turma 3\n");
-    System.out.println("0. Voltar\n");
-    continuar = this.scan.nextInt();
-    switch(continuar)
-            {
-            case 1:
-            
-            T.Executar1();
-            break;
-            case 2:
-            T.Executar2();
-            break;
-            case 3:
-            T.Executar3();
-            break;
-            case 0:
-            return;
-        default:
-            System.out.println("Digite uma opção válida\n");
-            }
-            } while(continuar != 0);
-}
-
-private void Sair()
-{
-System.out.println("Fechando o programa.\n");
-}
-
-
-private void AlunoMenu(){
-    int continuar = 99;
-    do{
-        System.out.println("\n\t===================");
-        System.out.println("\tSelecione um aluno");
-        System.out.println("\t===================\n\n");   
-        System.out.println("1. Pedro\n");
-        System.out.println("2. Joao\n");
-        System.out.println("3. Jose\n");
-        System.out.println("4. Carlos\n");
-        System.out.println("5. Eduardo\n");
-        System.out.println("6. Guilhemer\n");
-        System.out.println("7. Vitor\n");
-        System.out.println("8. Thiago\n");
-        System.out.println("9. Ana\n");
-        System.out.println("10. Mariana\n");
-        System.out.println("11. Julia\n");
-        System.out.println("12. Valesca\n");
-        System.out.println("0. Voltar\n");
-        continuar = this.scan.nextInt();
-        switch(continuar){
-            case 1:
-            A1.Executar1();
-            break;
-            case 2:
-            A1.Executar2();
-            break;
-            case 3:
-            A1.Executar3();
-            break;
-            case 4:
-            A1.Executar4();
-            break;            
-            case 5:
-            A1.Executar5();
-            break;
-            case 6:
-            A1.Executar6();
-            break;
-            case 7:
-            A1.Executar7();
-            break;
-            case 8:
-            A1.Executar8();
-            break;    
-            case 9:
-            A1.Executar9();
-            break;
-            case 10:
-            A1.Executar10();
-            break;
-            case 11:
-            A1.Executar11();
-            break;
-            case 12:
-            A1.Executar12();
-            break;    
-            case 0:
-            return;
-            default:
-            System.out.println("Digite uma opção válida\n");
+    public TurmasMenu(){
+        this.scan = new Scanner(System.in);
         }
+
+        public void Executar1(){
+            this.TurmaUm();
+        }
+        public void Executar2(){
+            this.TurmaDois();
+        }
+        public void Executar3(){
+            this.TurmaTres();
+        }
+
+        private void TurmaUm(){
+            int continuar = 99;
+            do{
+                System.out.println("\n\t========================");
+                System.out.println("\t    Selecione um aluno ");
+                System.out.println("\tpara ver suas disciplinas ");
+                System.out.println("\t==========================\n\n");  
+                System.out.println("1. Pedro \n");
+                System.out.println("2. Joao\n");
+                System.out.println("3. Jose\n");
+                System.out.println("4. Carlos\n");
+                System.out.println("0. Voltar\n");
+                continuar = this.scan.nextInt();
+                switch(continuar){
+                case 1:
+                A.Aluno1();
+                break;
+                case 2:
+                A.Aluno2();        
+                break;
+                case 3:
+                A.Aluno3();
+                break;
+                case 4:
+                A.Aluno4();
+                break;
+                default:
+                System.out.println("Digite uma opção válida\n");
+                }
             } while(continuar != 0);
+        
+        }
+        private void TurmaDois(){
+            int continuar = 99;
+            do{
+                System.out.println("\n\t========================");
+                System.out.println("\t    Selecione um aluno ");
+                System.out.println("\tpara ver suas disciplinas ");
+                System.out.println("\t==========================\n\n");  
+                System.out.println("1. Eduardo\n");
+                System.out.println("2. Guilhemer\n");
+                System.out.println("3. Vitor\n");
+                System.out.println("4. Thiago 4\n");
+                System.out.println("0. Voltar\n");
+                continuar = this.scan.nextInt();
+                switch(continuar){
+                case 1:
+                A.Aluno5();
+                break;
+                case 2:
+                A.Aluno6();        
+                break;
+                case 3:
+                A.Aluno7();
+                break;
+                case 4:
+                A.Aluno8();    
+                break;
+                default:
+                System.out.println("Digite uma opção válida\n");
+                }
+            } while(continuar != 0);
+        
+        }
+        private void TurmaTres(){
+            int continuar = 99;
+            do{
+                System.out.println("\n\t========================");
+                System.out.println("\t    Selecione um aluno ");
+                System.out.println("\tpara ver suas disciplinas ");
+                System.out.println("\t==========================\n\n");  
+                System.out.println("1. Ama \n");
+                System.out.println("2. Mariana\n");
+                System.out.println("3. Julia\n");
+                System.out.println("4. Valesca\n");
+                System.out.println("0. Voltar\n");
+                continuar = this.scan.nextInt();
+                switch(continuar){
+                case 1:
+                A.Aluno9();
+                break;
+                case 2:
+                A.Aluno10();    
+                break;
+                case 3:
+                A.Aluno11();    
+                break;
+                case 4:
+                A.Aluno12();    
+                break;
+                default:
+                System.out.println("Digite uma opção válida\n");
+                }
+            } while(continuar != 0);
+        
+        }
+
+ public void Info1(){
+            this.turmaumInfo();
+        }
+        public void Info2(){
+            this.turmadoisInfo();
+        }
+        public void Info3(){
+            this.turmatresInfo();
+        }
+
+private void turmaumInfo(){
+     System.out.println("\nAlunos nessa turma:Pedro, Joao, Jose, Carlos\n");
+     System.out.println("Disciplinas nessa turma: Ciencias, Matematica\n");
+     System.out.println("Professores nessa turma: Alan, Luiz\n");
+}
+private void turmadoisInfo(){
+    System.out.println("\nAlunos nessa turma: Eduardo, Guilhemer, Vitor, Thiago\n");
+    System.out.println("Disciplinas nessa turma: Ciencias, Matematica\n");
+    System.out.println("Professores nessa turma: Alan, Luiz\n");
+}
+private void turmatresInfo(){
+    System.out.println("\nAlunos nessa turma: Ana, Mariana, Julia, Valesca\n");
+    System.out.println("Disciplinas nessa turma: Ciencias, Matematica\n");
+    System.out.println("Professores nessa turma: Alan, Luiz\n");
 }
 }
