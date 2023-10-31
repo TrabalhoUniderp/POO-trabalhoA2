@@ -17,7 +17,7 @@ private void ExibirMenu(){
         System.out.println("\n\t===================");
         System.out.println("\tSelecione uma opcao");
         System.out.println("\t===================\n\n");    
-        System.out.println("1. Professor\n");
+        System.out.println("1. Professor \n");
         System.out.println("2. Aluno\n");
     System.out.println("0. Sair\n");
     continuar = this.scan.nextInt();
@@ -46,8 +46,8 @@ do{
     System.out.println("\n\t===================");
     System.out.println("\tSelecione um professor");
     System.out.println("\t===================\n\n");   
-    System.out.println("1. Professor 1\n");
-    System.out.println("2. Professor 2\n");
+    System.out.println("1. Professor Alan\n");
+    System.out.println("2. Professor Luiz\n");
     System.out.println("0. Voltar\n");
     continuar = this.scan.nextInt();
     switch(continuar)
@@ -109,18 +109,18 @@ private void AlunoMenu(){
         System.out.println("\n\t===================");
         System.out.println("\tSelecione um aluno");
         System.out.println("\t===================\n\n");   
-        System.out.println("1. Aluno 1\n");
-        System.out.println("2. Aluno 2\n");
-        System.out.println("3. Aluno 3\n");
-        System.out.println("4. Aluno 4\n");
-        System.out.println("5. Aluno 5\n");
-        System.out.println("6. Aluno 6\n");
-        System.out.println("7. Aluno 7\n");
-        System.out.println("8. Aluno 8\n");
-        System.out.println("9. Aluno 9\n");
-        System.out.println("10. Aluno 10\n");
-        System.out.println("11. Aluno 11\n");
-        System.out.println("12. Aluno 12\n");
+        System.out.println("1. Pedro\n");
+        System.out.println("2. Joao\n");
+        System.out.println("3. Jose\n");
+        System.out.println("4. Carlos\n");
+        System.out.println("5. Eduardo\n");
+        System.out.println("6. Guilhemer\n");
+        System.out.println("7. Vitor\n");
+        System.out.println("8. Thiago\n");
+        System.out.println("9. Ana\n");
+        System.out.println("10. Mariana\n");
+        System.out.println("11. Julia\n");
+        System.out.println("12. Valesca\n");
         System.out.println("0. Voltar\n");
         continuar = this.scan.nextInt();
         switch(continuar){
