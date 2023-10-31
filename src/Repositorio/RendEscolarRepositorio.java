@@ -36,7 +36,10 @@ public class RendEscolarRepositorio extends BaseRepositorio<RendEscolarFakeDB, R
         alvo.setTurma(instancia.getTurma());
         alvo.setNotaProva1(instancia.getNotaProva1());
         alvo.setNotaProva2(instancia.getNotaProva2());
-        alvo.setTrabalhos(instancia.getTrabalhos());
+        alvo.setTrabalho1(instancia.getTrabalho1());
+        alvo.setTrabalho2(instancia.getTrabalho2());
+        alvo.setTrabalho3(instancia.getTrabalho3());
+        alvo.setTrabalho4(instancia.getTrabalho4());
         alvo.setMediaTrabalhos(instancia.getMediaTrabalhos());
         alvo.setMediageralAluno(instancia.getMediageralAluno());
         return alvo;

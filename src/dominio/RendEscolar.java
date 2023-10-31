@@ -6,7 +6,10 @@ public class RendEscolar extends BaseIdentificador {
     private Turma turma;
     private double notaProva1;
     private double notaProva2;
-    private NotaTrabalho trabalhos;
+    private NotaTrabalho trabalho1;
+    private NotaTrabalho trabalho2;
+    private NotaTrabalho trabalho3;
+    private NotaTrabalho trabalho4;
     private double mediaTrabalhos;
     private double mediageralAluno;
 
@@ -42,13 +45,38 @@ public class RendEscolar extends BaseIdentificador {
         this.notaProva2 = notaProva2;
     }
 
-    public NotaTrabalho getTrabalhos() {
-        return trabalhos;
+     public NotaTrabalho getTrabalho1() {
+        return trabalho1;
     }
 
-    public void setTrabalhos(NotaTrabalho trabalhos) {
-        this.trabalhos = trabalhos;
+    public void setTrabalho1(NotaTrabalho trabalho1) {
+        this.trabalho1 = trabalho1;
     }
+
+    public NotaTrabalho getTrabalho2() {
+        return trabalho2;
+    }
+
+    public void setTrabalho2(NotaTrabalho trabalho2) {
+        this.trabalho2 = trabalho2;
+    }
+
+    public NotaTrabalho getTrabalho3() {
+        return trabalho3;
+    }
+
+    public void setTrabalho3(NotaTrabalho trabalho3) {
+        this.trabalho3 = trabalho3;
+    }
+
+    public NotaTrabalho getTrabalho4() {
+        return trabalho4;
+    }
+
+    public void setTrabalho4(NotaTrabalho trabalho4) {
+        this.trabalho4 = trabalho4;
+    }
+
 
     public double getMediaTrabalhos() {
         return mediaTrabalhos;
@@ -73,7 +101,10 @@ public class RendEscolar extends BaseIdentificador {
         this.turma = turma;
         this.notaProva1 = notaProva1;
         this.notaProva2 = notaProva2;
-        this.trabalhos = trabalhos;
+        this.trabalho1 = trabalho1;
+        this.trabalho2 = trabalho2;
+        this.trabalho3 = trabalho3;
+        this.trabalho4 = trabalho4;
         this.mediaTrabalhos = mediaTrabalhos;
         this.mediageralAluno = mediageralAluno;
     }
